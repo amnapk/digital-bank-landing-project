@@ -13,7 +13,7 @@ html,body{
   padding: 0px 120px;
 }
 .navbar{
-  z-index: 3;
+  z-index: 9;
 }
 .article-section h5:hover{
   color:hsl(136, 64%, 51%);
@@ -46,43 +46,28 @@ html,body{
   width: 40px;
 }
 
-.hero-wrapper{
-  display: flex;
-  flex-direction: row;
-  background-color: red;
-}
-.hero_image_section{
-  position: relative;
-  
-}
 .hero-section{
   position: relative;
-  padding-bottom: 10px;
-}
-.hero-conetent{
-   background-color: #2ecc71;
+  /* padding-bottom: 10px; */
 }
 
 .hero-img{
-  width: 100%;
-  height: 100vh;
-  position: absolute; 
-  right:-400px;
-  top: -245px;
+ position: absolute;
+  top: -180px;
+  right: -380px;
+  width: 900px;
+  height: 900px;
   background: url(images/bg-intro-desktop.svg);
-  background-position: center ;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 950px 700px;
-  
-  z-index: -5;
+  z-index: -1;
 }
 .hero-section img{
-  position: absolute;
-  height:750px;
-  right: 0px;
- 
-  top: -140px;
-  /* z-index: 999; */
+ position: absolute;
+  top: -60px;
+  right: -120px;
+  height: 620px;
+  z-index: 5;
 } 
 .hero-section h1{
    width: 30%;
@@ -125,26 +110,32 @@ p{
   text-decoration: none;
   color: white;
 }
-@media all and (max-width: 375px){
-  .hero_image_section{
-    position: relative;
-    background-color: red;
-  }
-  
+@media all and (max-width: 700px){
+  .hero-conetent{
+  margin-top: 460px;
+} 
+.hero-section h1{
+   width: 75%;
+}
+.hero-section p{
+  width: 75%;
+}
+}
+@media all and (max-width: 430px){
   .hero-img{
-  width: 100%;
+  width: 400px;
   height: 450px;
-  left:0;
+  top:-90px;
+  right: -10px;
   background: url(images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .hero-section img{
-      position: absolute;
-    
-  height:450px;
-  right: 0px;
-  width: 100%;
-  top: -190px;
+  height:420px;
+  right: 10px;
+  width: 90%;
+  top: -120px;
 }
 .hero-conetent{
   margin-top: 260px;
@@ -159,16 +150,17 @@ p{
 .mobile-size{
   font-size: 14px;
 }
+.footer-bottom-cap p{
+  display: flex;
+  justify-content: center;
+}
+/* .footer-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.footer-bottom-cap{
+  align-items: center;
+}
 }
 
- @media (max-width: 970px){
-.hero-section{
-
-  
-}
-
-.hero-wrapper{
-  
-  flex-direction: column;
-}
-} 
