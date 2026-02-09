@@ -27,6 +27,7 @@ html,body{
   text-decoration: underline;
   text-decoration-color: hsl(136, 64%, 51%) ;
 } */
+
  .navbar-nav .nav-link {
   position: relative;
 }
@@ -54,8 +55,8 @@ html,body{
 .hero-img{
  position: absolute;
   top: -180px;
-  right: -380px;
-  width: 900px;
+  right: -200px;
+  width: 880px;
   height: 900px;
   background: url(images/bg-intro-desktop.svg);
   background-size: contain;
@@ -64,9 +65,9 @@ html,body{
 }
 .hero-section img{
  position: absolute;
-  top: -60px;
-  right: -120px;
-  height: 620px;
+  top: -140px;
+  right: -50px;
+  height: 720px;
   z-index: 5;
 } 
 .hero-section h1{
@@ -110,7 +111,7 @@ p{
   text-decoration: none;
   color: white;
 }
-@media all and (max-width: 700px){
+@media all and (max-width: 950px){
   .hero-conetent{
   margin-top: 460px;
 } 
@@ -121,11 +122,12 @@ p{
   width: 75%;
 }
 }
-@media all and (max-width: 430px){
+@media all and (max-width: 460px){
   .hero-img{
-  width: 400px;
-  height: 450px;
+  width: 520px;
+  height: 500px;
   top:-90px;
+  left:-15px;
   right: -10px;
   background: url(images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
@@ -158,7 +160,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+} */ 
 .footer-bottom-cap{
   align-items: center;
 }
